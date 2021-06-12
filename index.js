@@ -1,4 +1,4 @@
-//alert("Me");
+alert("Me");
 // console.log("Hello world");
 // document.write("this is document write");
 
