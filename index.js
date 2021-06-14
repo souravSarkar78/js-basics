@@ -68,8 +68,38 @@ let j = 1;
 
 // String methods ///////////////////
 
-let mystring = 'My name is sourav sarkar';
+// let mystring = 'My name is sourav sarkar';
 
-console.log(mystring.length)
+// console.log(mystring.length)
 
-console.log(mystring.indexOf('sarkar'))   // fing something in array
+// console.log(mystring.indexOf('sarkar'))   // fing something in array
+
+// DOM manupulation ////////////////////////
+
+firstcontainer = document.getElementsByTagName('div')[0]
+
+firstcontainer.style.background = 'gray'
+
+console.log(firstcontainer)
+
+// Events ////////////////////////////
+
+function clicked(){
+    console.log("the button was clicked");
+}
+
+// window.onload = alert("loaded")  
+
+firstcontainer.addEventListener('mouseover', function(){
+    firstcontainer.style.background = 'brown'
+})
+
+firstcontainer.addEventListener('mouseout', function(){
+    firstcontainer.style.background = 'gray';
+    console.clear()
+})
+
+
+firstcontainer.addEventListener('click', function(){
+    console.log("mouse clicked")
+})
